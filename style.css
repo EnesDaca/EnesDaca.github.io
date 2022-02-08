@@ -27,7 +27,7 @@ body {
 }
 
 a {
-    color : #202020;
+    color : black;
     text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ nav li {
     margin-top: 5px;
 }
 
-nav li::after {
+/* nav li::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -74,7 +74,7 @@ nav li::after {
     height: 2px;
     background: rgb(68, 67, 67);
     transition: 0.4s ease-out;
-}
+} */
 
 nav li:hover::after{
     left: 0;
@@ -82,26 +82,28 @@ nav li:hover::after{
 }
 
 nav {
-    padding: 30px 150px;
+    padding: 30px 100px;
     height: 67vh;
 }
 
 nav a {
-    color : #202020;
+    color : black;
     font-size: 1.2em;
     letter-spacing: 0.5px;
 }
 nav a:hover {
-    color: #1b1b1b;
+    background-color:#00ff33;
+    color: white;
 }
 
 /* =====NEW CODE ========== */
 
 nav ul li a{
     position: relative;
-    color: #1b1b1b;
+    color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 15px;
     display: block;
     width: 100%;
 }
@@ -125,16 +127,17 @@ nav ul ul li{
 
 nav ul ul li a{
     font-size: 17px;
-    color: #202020;
-    padding-left: 80px;
+    color: black;
+    padding-left: 18px;
 }
 
 nav ul li.active ul li a{
-    color : #202020;
+    color : black;
+    line-height: 12px;
 }
 
 nav ul li.active ul li a:hover{
-    color: #202020;
+    color: white;
 }
 
 
