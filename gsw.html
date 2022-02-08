@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamija Halilagić</title>
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+    <!-- anonymus font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <!-- new links -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+  <div class="text-header"><a href="#">LAMIJA HALILAGIĆ</a></div>
+        <section class="gsw">
+
+        <div class="img01">
+          <img src="./gsw/novaNova01.jpg" alt="nova01">
+        </div>
+        <div class="txt01">
+          <p><i>Night gatherings</i>, 100 x 150cm, oil on canvas</p>
+        </div>
+        
+        <div class="img01">
+          <img src="./gsw/nova002.jpg" alt="nova02">
+        </div>
+        <div class="txt01">
+          <p><i>Blue dog</i>, 100 x 150cm, oil on canvas</p>
+        </div>
+
+        <div class="img02">
+          <img src="./gsw/nova004.jpg" alt="nova02">
+        </div>
+        <div class="txt01">
+          <p><i>Gloves</i>, 100 x 100cm, oil on canvas</p>
+        </div>
+
+        <div class="img02">
+          <img src="./gsw/nova007.jpg" alt="nova02">
+        </div>
+        <div class="txt01">
+          <p><i>Billie</i>, 120 x 150cm, oil on canvas</p>
+        </div>
+
+        <div class="img01">
+          <img src="./gsw/nova009.jpg" alt="nova09">
+        </div>
+        <div class="txt01">
+          <p><i>Untitled 1</i>, 90 x 120cm, oil on canvas</p>
+        </div>
+
+        <div class="img02">
+          <img src="./gsw/nova006.jpg" alt="nova06">
+        </div>
+        <div class="txt01">
+          <p><i>Lost garden</i>, 90 x 120cm, oil on canvas</p>
+        </div>
+
+        <div class="img02">
+          <img src="./gsw/nova005.jpg" alt="nova06">
+        </div>
+        <div class="txt01">
+          <p><i>Fire in the ocean</i>, 115 x 150cm, oil on canvas</p>
+        </div>
+
+        <div class="img02">
+          <img src="./gsw/nova008.jpg" alt="nova08">
+        </div>
+        <div class="txt01">
+          <p><i>F word</i>, 120 x 150cm, oil on canvas</p>
+        </div>
+    </section>
+    <script>
+        $('.btn').click(function(){
+          $(this).toggleClass("click");
+          $('.sidebar').toggleClass("show");
+        });
+          $('.feat-btn').click(function(){
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+          });
+          $('.serv-btn').click(function(){
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+          });
+          $('nav ul li').click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+          });
+     </script>
+</body>
+</body>
+<footer>
+</footer>
+</html>
