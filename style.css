@@ -144,10 +144,11 @@ nav ul li.active ul li a:hover{
 
 /* ////////ROOTED //////////////////////// */
 
-/* .rooted {
-    background-color: whitesmoke;
+.rooted {
+    background:white;
     height: auto;
 }
+
 .rooted img {
     padding: 50px 100px 0px 100px;
     width: 100%;
@@ -169,7 +170,7 @@ nav ul li.active ul li a:hover{
     width: 100%;
     height: 600px;
     border: none;
-} */
+}
 
 /* Media Queries */
 
