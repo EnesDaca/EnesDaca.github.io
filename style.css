@@ -191,44 +191,39 @@ nav ul li.active ul li a:hover{
 /* Media Queries */
 
 @media (max-width: 768px) {
+    body {
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+    }
+
     .text-header {
         display: flex;
         align-items: center;
-        padding: 30px 20px;
-        margin: 0;
+        padding: 50px 30px;
     }
 
     .text-header a {
-        font-size: 20px;
+        font-size: 14px;
         padding: 0;
         margin: auto;
+        font-weight: bold;
+        color: white;
     }
 
     nav {
-        padding: 20px;
+        padding: 30px;
     }
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 25px;
     }
     
     nav ul ul li a{
         font-size: 20px;
         padding-left: 30px;
-    }
-
-    .gsw-text a{
-        font-size: 20px;
-        padding: 20px 20px;
-    }
-    
-    .gsw img {
-        padding: 5px 20px;
-    }
-
-    .gsw p {
-        margin: 0px;
-        padding: 5px 20px;
+        font-weight: normal;
+        
     }
 
 }
