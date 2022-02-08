@@ -8,8 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: orator-std, monospace; */
-    font-family: 'Anonymous Pro', monospace;
+    font-family: orator-std, monospace;
+    /* font-family: 'Anonymous Pro', monospace; */
     line-height: 1.2;
     /* user-select: none; */
     
@@ -45,16 +45,20 @@ img {
     width: 400px;
     color: #202020;
     letter-spacing: 35px;
-    padding: 76px 150px;
+    padding: 76px 100px;
 }
+
 .text-header a {
     color: white;
     font-size: 28px;
+    font-family: orator std, monospace;
+    /* font-family: 'Anonymous Pro', monospace; */
 }
 
 nav ul {
     list-style: none;
 }
+
 nav li {
     width: fit-content;
     position: relative;
@@ -78,7 +82,7 @@ nav li:hover::after{
 }
 
 nav {
-    padding: 10px 150px;
+    padding: 30px 150px;
     height: 67vh;
 }
 
@@ -97,8 +101,7 @@ nav ul li a{
     position: relative;
     color: #1b1b1b;
     text-decoration: none;
-    font-size: 24px;
-    font-weight: 590;
+    font-size: 20px;
     display: block;
     width: 100%;
 }
@@ -121,8 +124,7 @@ nav ul ul li{
 }
 
 nav ul ul li a{
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 17px;
     color: #202020;
     padding-left: 80px;
 }
@@ -135,28 +137,6 @@ nav ul li.active ul li a:hover{
     color: #202020;
 }
 
-/* /////// Goodbye Sad World ////////////
-
-.gsw {
-    height: auto;
-}
-.gsw img {
-    padding: 50px 100px 0px 100px;
-    width: 100%;
-}
-.gsw p {
-    margin-left: 100px;
-    font-size: large;
-    font: bolder;
-}
-.gsw-text {
-    display: flex;
-    justify-content: flex-start;
-}
-.gsw-text a {
-    font-size: 30px;
-    padding-left: 100px;
-}
 
 
 /* ////////ROOTED //////////////////////// */
