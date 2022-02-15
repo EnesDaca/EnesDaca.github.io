@@ -23,7 +23,7 @@ body {
 body {
     width: 100%;
     background: url(FreshPaint-42-2021.01.11-11.25.03.jpg) no-repeat top center / cover;
-    background-size: cover;
+    background-size: auto;
 }
 
 a {
@@ -43,7 +43,7 @@ img {
     display: flex;
     justify-content: flex-start;
     width: 400px;
-    color: #202020;
+    color: black;
     letter-spacing: 35px;
     padding: 76px 100px;
 }

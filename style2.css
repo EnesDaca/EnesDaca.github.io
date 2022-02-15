@@ -9,7 +9,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Orator Std, monospace;
+    /* font-family: Orator Std, monospace; */
+    font-family: Arial, Helvetica, sans-serif;
     /* font-family: 'Anonymous Pro', monospace; */
     /* font-style: normal; */
     line-height: 1.2;
@@ -38,7 +39,7 @@ ul {
     display: flex;
     justify-content: flex-start;
     width: 400px;
-    font-family: orator-std;
+    font-family: Orator Std, monospace;
     color: #202020;
     letter-spacing: 35px;
     padding: 76px 100px;
@@ -47,6 +48,7 @@ ul {
 .text-header a {
     color: #202020;
     font-size: 28px;
+    font-family: Orator Std, monospace;
 }
 
 .text-header-black {
@@ -58,27 +60,37 @@ ul {
 .text-header-black a {
     color: white;
     font-size: 28px;
+    font-family: Orator Std, monospace;
 }
 
-.img01{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 85vh;
-    margin-bottom: 30px;
 
-}
-.img01 img {
-    width: fit-content;
-    height: 100%;
-}
+/*  */
 
 .txt01 {
     text-align: center;
     font-size: 14px;
     font-family: Anonymous Pro, mono;
     /* margin-left: 406px; */
+    margin-bottom: 150px;
+}
+
+.txt01-01 {
+    font-size: 12px;
+    margin-left: 485px;
+    margin-bottom: 150px;
+}
+
+
+.txt01-02 {
+    font-size: 12px;
+    margin-left: 440px;
+    margin-bottom: 150px;
+}
+
+.txt01-03 {
+    text-align: center;
+    font-size: 12px;
+    margin-right: 250px;
     margin-bottom: 150px;
 }
 
@@ -96,14 +108,43 @@ ul {
 }
 
 .txt03 {
-    margin-bottom: 150px;
-    margin-left: 325px;
-    margin-top: -80px;
+    margin-top: 20px;
+    margin-left: -100px;
 }
 
-.txt04 {
-    margin-top: 130px;
-    margin-left: 325px;
+.txt04-all {
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.txt04-tyde {
+    margin-left: 40px;
+}
+
+.pdf-hover-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+}
+
+.pdf-hover:hover,
+.pdf-hover-link a:hover {
+    background-color: #00ff33;
+}
+
+.pdf-hover-link a {
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+
+}
+.pdf-hover-link {
+    padding-left: 100px;
+    width: fit-content;
+}
+
+.pdf-hover-link a {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .img03 {
@@ -120,12 +161,30 @@ ul {
     height: 100%;
 }
 
+.img04 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 105vh;
+    margin-bottom: 30px;
+}
+
+.img04 img {
+    width: fit-content;
+    height: 100%;
+}
+
 .sf-img {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 240px;
     height: 380px;
+}
+
+.sf-img p {
+    font-size: 12px;
 }
 
 .sf-img img {
@@ -146,6 +205,80 @@ ul {
     height: fit-content;
 }
 
+.sf-img-small {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 210px;
+    height: 330px;
+    font-size: 12px;
+}
+
+.sf-img-small img {
+    width: 100%;
+    height: fit-content;
+}
+
+.text-sticky {
+    position: relative;
+    top: 810vh;
+    right: 50px;
+    width: 400px;
+    height: auto;
+    position: absolute;
+    font-size: 13px;
+}
+
+.gb-img-small {
+    display: flex;
+    align-self: flex-end;
+    align-content: stretch;
+    flex-direction: column;
+    width: 180px;
+    height: 300px;
+}
+
+.gb-img-small p {
+    font-size: 13px;
+}
+
+.gb:hover {
+    background-color: #00ff33;
+}
+
+.gb-img-small img {
+    width: 120px;
+    height: auto;
+}
+
+/* ABOUT  */
+
+.about-txt {
+   display: flex;
+   flex-direction: column;
+   padding: 0px 100px;
+   gap: 10px;
+   margin-bottom: 50px;
+
+}
+.about-txt p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-txt p i {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-txt h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-txt a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-txt a:hover {
+    background-color: #00ff33;
+}
+
 /* Containers gsw */
 
 .double-container {
@@ -156,6 +289,94 @@ ul {
     padding: 30px 20px;
 }
 
+/* Container WBRC */
+
+.double-container-wbrc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 150px;
+    padding: 30px 100px;
+}
+
+.text-container-wbrc {
+    padding: 100px 100px;
+
+}
+
+.text-container-wbrc p {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.text-container-wbrc p i {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.double-container-gb {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70vw;
+    align-items: flex-end;
+    gap: 10px;
+    row-gap: 15px;
+    padding: 0px 100px;
+}
+
+.text-container-gb {
+    padding: 50px 100px;
+    letter-spacing: 0px;
+}
+
+.love-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 100px;
+}
+
+.img01{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+    /* margin-bottom: 30px; */
+}
+
+.img01-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+    margin-bottom: 30px;
+}
+.img01-container div {
+    display: flex;
+    align-content: flex-start;
+}
+
+.img01 img {
+    width: fit-content;
+    height: 100%;
+}
+
+.img01-ll {
+    display: flex;
+    justify-content: center;
+}
+.img01-ll img {
+    width: 1220px;
+    height: fit-content;
+}
+
+#image{
+    width: 100%;
+    max-width: 350px;
+    margin: 20px;
+    border-radius: 5px;
+  }
 
 /* /////// Goodbye Sad World //////////// */
 
@@ -205,6 +426,133 @@ ul {
     border: none;
 }
 
+/* SLIDER */
+
+
+.tyde-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .tyde-container p {
+      margin-top: 30px;
+      margin-right: 700px;
+  }
+  .content{
+    height: 500px;
+    width: 850px;
+    position: relative;
+  }
+  .content .images{
+    height: 100%;
+    width: 100%;
+  }
+  .content .images img{
+    height: 100%;
+    width: 100%;
+  }
+  .btm-slides{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .btm-slides span{
+    height: 10px;
+    width: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .sliders{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    cursor: pointer;
+
+  }
+  .sliders:hover{
+      color: #00ff33;
+
+  }
+  .right{
+    right: 0;
+  }
+  .sliders span{
+    line-height: 41px;
+    font-size: 25px;
+    color:  black;
+  }
+
+  .sliders span:hover{
+    color:  #00ff33;
+  }
+
+/* MAGNIFY LENS */
+
+.magnify,
+.magnify > .magnify-lens,
+.magnify-mobile,
+.lens-mobile { /* Reset */
+  min-width: 0;
+  min-height: 0;
+  animation: none;
+  border: none;
+  float: none;
+  margin: 0;
+  opacity: 1;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  text-indent: 0;
+  transform: none;
+  transition: none;
+}
+.magnify {
+  position: relative;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  display: inline-block;
+  z-index: inherit;
+}
+.magnify > .magnify-lens { /* Magnifying lens */
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  /* Multiple box shadows to achieve the glass lens effect */
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+    0 0 7px 7px rgba(0, 0, 0, 0.25),
+    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  cursor: none;
+  display: none;
+  z-index: 99;
+}
+.magnify > .magnify-lens.loading {
+  background: #333 !important;
+  opacity: 0.8;
+}
+.magnify > .magnify-lens.loading:after { /* Loading text */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  content: 'Loading...';
+  font: italic normal 16px/1 Calibri, sans-serif;
+  letter-spacing: 1px;
+  margin-top: -8px;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(51, 51, 51, 0.8);
+  text-transform: none;
+}
 
 /* Media Queries */
 
