@@ -13,28 +13,138 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
     <!-- new links -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 
 </head>
 <body>
   <div class="text-header"><a href="index.html">LAMIJA HALILAGIC</a></div>
-        <section class="gsw">
+        <section class="links-section">
+            <div class="container">
+                <div class="box" style="width:200px">
+                  <img id="myimage" src="">
+                  <div class="is-clipped">
+                    <div id="mytitle" class="has-text-weight-bold"></div>
+                    <div id="mydescription" class="mt-2"></div>
+                    <a href="https://soundcloud.com/wbrc">https://soundcloud.com/wbrc</a>
+                    <div id="myurl" class="mt-2 is-size-7"></div>
+                  </div>
+                </div>
+              </div>
+               
+              <div class="container">
+                <div class="box" style="width:200px">
+                  <img id="myimage2" src="">
+                  <div class="is-clipped">
+                    <div id="mytitle2" class="has-text-weight-bold"></div>
+                    <div id="mydescription2" class="mt-2"></div>
+                    <a href="https://vimeo.com/user67779808">https://vimeo.com/user67779808</a>
+                    <div id="myurl2" class="mt-2 is-size-7"></div>
+                  </div>
+                </div>
+              </div>
 
-        <div class="about-txt">
+              <div class="container" >
+
+                <div class="box" style="width:200px">
+                  <img id="myimage3" src="">
+                  <div class="is-clipped">
+                    <div id="mytitle3" class="has-text-weight-bold"></div>
+                    <div id="mydescription3" class="mt-2"></div><a href="https://www.artconnect.com/fflamby">https://www.artconnect.com/fflamby</a>
+                    <div id="myurl3" class="mt-2 is-size-7"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="box" style="width:200px">
+                  <img id="myimage4" src="">
+                  <div class="is-clipped">
+                    <div id="mytitle4" class="has-text-weight-bold"></div>
+                    <div id="mydescription4" class="mt-2"></div>
+                    <a href="https://www.instagram.com/secret_room03/">https://www.instagram.com/secret_room03/</a>
+                    <div id="myurl4" class="mt-2 is-size-7"></div>
+                  </div>
+                </div>
+              </div>
+
+        <!-- <div class="about-txt">
+            
            <div> <a href="https://soundcloud.com/wbrc" target="_blank">https://soundcloud.com/wbrc</a></div>
            <div> <a href="http://wbrc.irational.org/" target="_blank">http://wbrc.irational.org/</a></div>
            <div> <a href="https://www.artconnect.com/fflamby" target="_blank">https://www.artconnect.com/fflamby</a></div>
            <div> <a href="https://vimeo.com/user67779808" target="_blank">https://vimeo.com/user67779808</a></div>
            <div> <a href="https://www.instagram.com/secret_room03/" target="_blank">https://www.instagram.com/secret_room03/</a></div>
-        </div>
+        </div> -->
         <div class="pdf-hover-link">
             <a href="./pdf/PORTFOLIO_Selected works.pdf" alt="wbrc zurnal pdf" target="_blank">PORTFOLIO_Selected works_LH</a>
         </div>       
      
         
     </section>
-   
+    <script type="text/javascript">
+        var data = {key: 'f3aac94e13d033e2bc4fa9cb74c4a7b4', q: 'https://soundcloud.com/wbrc'}
+    
+        fetch('https://api.linkpreview.net', {
+          method: 'POST',
+          mode: 'cors',
+          body: JSON.stringify(data),
+        })
+          .then(res => res.json())
+          .then(response => {
+        document.getElementById("mytitle").innerHTML = response.title
+        document.getElementById("mydescription").innerHTML = response.description
+        document.getElementById("myimage").src = response.image
+        document.getElementById("myurl").innerHTML = response.url
+        })
+      </script>
+      <script type="text/javascript">
+        var data = {key: 'f3aac94e13d033e2bc4fa9cb74c4a7b4', q: 'https://vimeo.com/user67779808'}
+    
+        fetch('https://api.linkpreview.net', {
+          method: 'POST',
+          mode: 'cors',
+          body: JSON.stringify(data),
+        })
+          .then(res => res.json())
+          .then(response => {
+        document.getElementById("mytitle2").innerHTML = response.title
+        document.getElementById("mydescription2").innerHTML = response.description
+        document.getElementById("myimage2").src = response.image
+        document.getElementById("myurl2").innerHTML = response.url
+        })
+      </script>
+       <script type="text/javascript">
+        var data = {key: 'f3aac94e13d033e2bc4fa9cb74c4a7b4', q: 'https://www.artconnect.com/fflamby'}
+    
+        fetch('https://api.linkpreview.net', {
+          method: 'POST',
+          mode: 'cors',
+          body: JSON.stringify(data),
+        })
+          .then(res => res.json())
+          .then(response => {
+        document.getElementById("mytitle3").innerHTML = response.title
+        document.getElementById("mydescription3").innerHTML = response.description
+        document.getElementById("myimage3").src = response.image
+        document.getElementById("myurl3").innerHTML = response.url
+        })
+      </script>
+        <script type="text/javascript">
+            var data = {key: 'f3aac94e13d033e2bc4fa9cb74c4a7b4', q: 'https://www.instagram.com/secret_room03/'}
+        
+            fetch('https://api.linkpreview.net', {
+              method: 'POST',
+              mode: 'cors',
+              body: JSON.stringify(data),
+            })
+              .then(res => res.json())
+              .then(response => {
+            document.getElementById("mytitle4").innerHTML = response.title
+            document.getElementById("mydescription4").innerHTML = response.description
+            document.getElementById("myimage4").src = response.image
+            document.getElementById("myurl4").innerHTML = response.url
+            })
+          </script>
 </body>
 </body>
 <footer>
