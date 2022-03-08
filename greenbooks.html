@@ -15,26 +15,50 @@
     <!-- new links -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </head>
-<body>
+<body class="gbg">
   <div class="text-header"><a href="index.html">LAMIJA HALILAGIC</a></div>
-        <section class="gsw">
+        <section class="gsw">   
+          <div id="rest">
+            <div id="content-wrapper">
+		
+              <div class="column">
+                <div class="x-button"><input class="btnx" type="button" value="X"  id="btnx"></input> </div>
+                <img id=featured src="./GreenBooks/REST/3-10.jpg">
+          
+                <div id="slide-wrapper" >
+                  <img id="slideLeft" class="arrow" src="./GreenBooks/REST/arrow-left.png">
+          
+                  <div id="slider">
+                    <img class="thumbnail active" src="./GreenBooks/REST/3-10.jpg">
+                    <img class="thumbnail" src="./GreenBooks/REST/3-11.jpg">
+                    <img class="thumbnail" src="./GreenBooks/REST/3-12.jpg">
+                    <img class="thumbnail" src="./GreenBooks/REST/3-13.jpg">
+                  </div>
+          
+                  <img id="slideRight" class="arrow" src="./GreenBooks/REST/arrow-right.png">
+                </div>
+              </div>
+          
+            </div>
+          </div>
             <div class="double-container-gb">
             
               <div class="gb-img-small">
                 <img src="./GreenBooks/REST_2021_cover.jpg" alt="REST2021">
-                <p><br><b class="gb">REST </b></br></br>2022</br>42 pages</br>20 x 30cm</p>
+                <p></br><input class="btn1" type="button" id= "btn1" value="REST"></input></br></br>2022</br>42 pages</br>20 x 30cm</p>
               </div>
 
               <div class="gb-img-small"><div>
                 <img src="./GreenBooks/Lectures on nothing and more_2020_cover.jpg" alt="Lectures on nothing and more"></div>
-            <div>    <p><br><b class="gb">Lectures on nothing and more </b></br></br>2020</br>54 pages</br>16 x 15.5cm</p></div>
+            <div>    <p><br><input class="btn2" type="button" value="Lectures on nothing and more" id="btn2"></input></br></br>2020</br>54 pages</br>16 x 15.5cm</p></div>
               </div>
 
               <div class="gb-img-small">
                 <img src="./GreenBooks/The experience of living with tears_2019_cover.jpg" alt="Living with tears">
-                <p><br><b class="gb">The experience of living with tears</b></br></br>2019</br>12 pages</br>16 x 15.5cm</p>
+                <p><br><input class="btn2" type="button" id= "btn3" value="tears"></input></br></br>2019</br>12 pages</br>16 x 15.5cm</p>
               </div>
               
               <div class="gb-img-small">
@@ -67,12 +91,86 @@
                     This work you can touch, feel its textures, smell, hold in your hands.</i>
                     By deconstructing I'm reframing the meanings, reducing, erasing, censoring, and/or outlining certain imagery or visual concepts.  </p>
               </div>
+    <script type="text/javascript">
+              document.getElementById("btn1").addEventListener("click",function()
+              {
+                var box1=document.getElementById("rest");
+                if (box1.style.display=="none")
+                {
+                   box1.style.display="block";
+                   document.body.style.backgroundColor = "gray";
+                }
+                else
+                {
+                   box1.style.display="none";
+                }
+             });
 
-
-
+             document.getElementById("btnx").addEventListener("click",function()
+              {
+                var box1=document.getElementById("rest");
+                if (box1.style.display=="block")
+                {
+                   box1.style.display="none";
+                   document.body.style.backgroundColor = "white";
+                  
+                }
+                else
+                {
+                   box1.style.display="block";
+                }
+             });
+             
+    </script>
+<!-- <script type="text/javascript">
+      let btn = document.querySelector("button");
+      let div = document.querySelector("div");
+      btn.addEventListener("click", () => {
+      if (div.style.display === "none") {
+        div.style.display = "block";
+      } else {
+        div.style.display = "none";
+      }
+      });
+    </script> -->
+    <script type="text/javascript">
+      let thumbnails = document.getElementsByClassName('thumbnail')
+  
+      let activeImages = document.getElementsByClassName('active')
+  
+      for (var i=0; i < thumbnails.length; i++){
+  
+        thumbnails[i].addEventListener('mouseover', function(){
+          console.log(activeImages)
+          
+          if (activeImages.length > 0){
+            activeImages[0].classList.remove('active')
+          }
+          this.classList.add('active')
+          document.getElementById('featured').src = this.src
+  
+        })
+      }
+      let buttonRight = document.getElementById('slideRight');
+      let buttonLeft = document.getElementById('slideLeft');
+  
+      buttonLeft.addEventListener('click', function(){
+        document.getElementById('slider').scrollLeft -= 180
+      })
+  
+      buttonRight.addEventListener('click', function(){
+        document.getElementById('slider').scrollLeft += 180
+      })
+    </script>
     </section>
 </body>
-</body>
 <footer>
+  <div class="next-footer">
+    <div>
+      <a href="loveletter.html">NEXT</a>
+    </div>
+    <div>
+       <h4>Love Letter</h4>
+    </div>
 </footer>
 </html>
