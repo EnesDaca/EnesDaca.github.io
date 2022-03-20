@@ -23,7 +23,7 @@ body {
 body {
     width: 100%;
     background: url(FreshPaint-42-2021.01.11-11.25.03.jpg) no-repeat top center / cover;
-    background-size: auto;
+    background-size: fit-content;
 }
 
 a {
@@ -82,7 +82,7 @@ nav li:hover::after{
 }
 
 nav {
-    padding: 30px 100px;
+    padding: 50px 100px;
     height: 67vh;
 }
 
