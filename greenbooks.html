@@ -297,8 +297,9 @@
 
                 }
              });
-             document.getElementById("btn-x1").addEventListener("click",function()
+             document.getElementById("btn-x1").addEventListener("click",function(e)
               {
+                e.preventDefault();
                 var box1=document.getElementById("rest");
                 if (box1.style.display=="block")
                 {
@@ -313,22 +314,26 @@
                 }
              });
              
-             document.getElementById("btn-x2").addEventListener("click",function()
+             document.getElementById("btn-x2").addEventListener("click",function(e)                       
               {
+                e.preventDefault();
                 var box1=document.getElementById("lonam");
                 if (box1.style.display=="block")
                 {
                    box1.style.display="none";
                    document.body.style.backgroundColor = "white";
+                   document.preventDefault();
                   
                 }
                 else
                 {
                    box1.style.display="block";
+                   
                 }
              });
-             document.getElementById("btn-x3").addEventListener("click",function()
+             document.getElementById("btn-x3").addEventListener("click",function(e)
               {
+                e.preventDefault();
                 var box1=document.getElementById("tears");
                 if (box1.style.display=="block")
                 {
@@ -341,8 +346,9 @@
                    box1.style.display="block";
                 }
              });
-             document.getElementById("btn-x4").addEventListener("click",function()
+             document.getElementById("btn-x4").addEventListener("click",function(e)
               {
+                e.preventDefault();
                 var box1=document.getElementById("ihosta");
                 if (box1.style.display=="block")
                 {
@@ -355,8 +361,9 @@
                    box1.style.display="block";
                 }
              });
-             document.getElementById("btn-x5").addEventListener("click",function()
+             document.getElementById("btn-x5").addEventListener("click",function(e)
               {
+                e.preventDefault();
                 var box1=document.getElementById("tmh");
                 if (box1.style.display=="block")
                 {
@@ -369,8 +376,9 @@
                    box1.style.display="block";
                 }
              });
-             document.getElementById("btn-x6").addEventListener("click",function()
+             document.getElementById("btn-x6").addEventListener("click",function(e)
               {
+                e.preventDefault();
                 var box1=document.getElementById("faf");
                 if (box1.style.display=="block")
                 {
@@ -383,8 +391,9 @@
                    box1.style.display="block";
                 }
              });
-             document.getElementById("btn-x7").addEventListener("click",function()
+             document.getElementById("btn-x7").addEventListener("click",function(e)
               {
+                e.preventDefault();
                 var box1=document.getElementById("hove");
                 if (box1.style.display=="block")
                 {
