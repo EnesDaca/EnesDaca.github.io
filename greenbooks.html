@@ -198,7 +198,7 @@
             
 
               <div id ="btn-1" class="gb-cards">
-                <img src="./GreenBooks/REST_2021_cover.jpg" alt="REST2021">
+                <img src="./GreenBooks/REST_2021_cover.jpg" id="restimage" alt="REST2021">
                 <a id="btn-1"><b>REST</b></a>
                   <p>2022</p>
                   <p>42 pages</p>
@@ -304,19 +304,16 @@
 
               </script>
   <script type="text/javascript">
-                function myFunction() {
-                var element = document.getElementById("rest")
-                element.classList.toggle("resttoggle");
-              };
+
               document.getElementById("btn-1").addEventListener("click",function()
               {
                 var box1=document.getElementById("rest");
+                let restimage=document.getElementsByID("restimage");
                 if (box1.style.display=="none")
                 {
                    box1.style.display="block";
                    box1.style.zIndex = "1";
-                   document.body.style.backgroundColor = "gray";
-                   document.body.p.style.color = "white";
+                   document.body.style.backgroundColor = "#202020";
                 }
                 else
                 {
