@@ -18,9 +18,9 @@
 <body class="gbg">
   <div class="text-header"><a href="index.html">LAMIJA HALILAGIC</a></div>
         <section class="gsw">   
-
-          <div id="rest">
-            <div class="x-button"><a href="" id="btn-x1" class="x-button"><b>X</b></a></div>
+          
+          <div id="rest" >
+            <div class="x-button" ><a href="" id="btn-x1" class="x-button" ><b>X</b></a></div>
             <div class="wrapper">
               <div class="boxes">
                   <div class="slider">
@@ -199,7 +199,7 @@
 
               <div id ="btn-1" class="gb-cards">
                 <img src="./GreenBooks/REST_2021_cover.jpg" alt="REST2021">
-                <a id="btn-1">REST</a>
+                <a id="btn-1"><b>REST</b></a>
                   <p>2022</p>
                   <p>42 pages</p>
                   <p>20 x 30cm</p>
@@ -207,7 +207,7 @@
 
               <div id="btn-2" class="gb-cards">
                 <img src="./GreenBooks/Lectures on nothing and more_2020_cover.jpg" alt="Lectures on nothing and more">
-                <a id="btn-2">Lectures on nothing and more</a>
+                <a>Lectures on nothing and more</a>
                   <p>2022</p>
                   <p>42 pages</p>
                   <p>20 x 30cm</p>
@@ -232,30 +232,43 @@
                 </div>
                <a id="btn-2">Lectures on nothing and more</a></br></br><p>2020</br>54 pages</br>15,5 x 15,5cm</p>
               </div> -->
-
+<!-- 
               <div class="gb-img-small">
                 <img src="./GreenBooks/The experience of living with tears_2019_cover.jpg" alt="Living with tears">
-              <a id="btn-3">The experience of living with tears</a></br></br> <p>2019</br>12 pages</br>21 x 15cm</p>
-              </div>
+              <a id="btn-3">The experience of living with tears</a>
+                <p>2019</p>
+                <p>12 pages</p>
+                <p>21 x 15cm</p>
+              </div> -->
               
-              <div class="gb-img-small">
+              <div class="gb-cards" id="btn-4">
                 <img src="./GreenBooks/I'M HERE once said the artist_2018_cover.jpg" alt="I'M HERE">
-             <a id="btn-4">I'm here once said the artist </a><p>2018</br>16 pages</br>22 x 16,5cm</p>
+                <a>I'm here once said the artist </a>
+                  <p>2018</p>
+                  <p>16 pages</p>
+                  <p>22 x 16,5cm</p>
               </div>
 
-              <div class="gb-img-small">
+              <div class="gb-cards" id="btn-5">
                 <img src="./GreenBooks/Take me home_2017_cover.jpg" alt="Take me home">
-                <p><br> <a id="btn-5">Take me home</a></br><br></br>2017</br>12 pages</br>15,5 x 17cm</p>
+                <a>Take me home</a><p>2017</p>
+              <p>12 pages</p>
+              <p>15,5 x 17cm</p>
               </div>
 
-              <div class="gb-img-small">
+              <div class="gb-cards" id="btn-6">
                 <img src="./GreenBooks/Facts and fictions_2017_cover.jpg" alt="Facts and fictions">
-                <p><br><a id="btn-6">Facts and fictions</a></br></br>2018</br>8 pages</br>30 x 22cm</p>
+                <a >Facts and fictions</a><p>2018</p>
+                <p>8 pages</p>
+                <p>30 x 22cm</p>
               </div>
 
-              <div class="gb-img-small">
+              <div class="gb-cards" id="btn-7">
                 <img src="./GreenBooks/Handbook of visual experience_2016_cover.jpg" alt="Handbook">
-              <a id="btn-7">Handbook of visual experience</a><div><p>2016</br>30 pages</br>22 x 20cm</p></div>
+              <a>Handbook of visual experience</a>
+              <p>2016</p>
+              <p>30 pages</p>
+              <p>22 x 20cm</p>
               </div>
 
             </div>
@@ -291,6 +304,10 @@
 
               </script>
   <script type="text/javascript">
+                function myFunction() {
+                var element = document.getElementById("rest")
+                element.classList.toggle("resttoggle");
+              };
               document.getElementById("btn-1").addEventListener("click",function()
               {
                 var box1=document.getElementById("rest");
