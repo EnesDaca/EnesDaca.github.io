@@ -130,6 +130,65 @@ ul {
 .txt04-tyde {
     margin-left: 40px;
 }
+/* TYDE */
+
+.tyde-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.content{
+    height: 400px;
+    width: 750px;
+    position: relative;
+}
+  .content .images{
+    height: 100%;
+    width: 100%;
+}
+  .content .images img{
+    height: 100%;
+    width: 100%;
+  }
+  .btm-slides{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .btm-slides span{
+    height: 9px;
+    width: 35px;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+  .sliders{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    cursor: pointer;
+  }
+  .sliders:hover{
+    background: rgba(255,255,255,0.2);
+  }
+  .right{
+    right: 0;
+  }
+  .sliders span{
+    line-height: 41px;
+    font-size: 35px;
+    color: white;
+  }
+  .sliders span:hover{
+      color: #00ff33;
+  }
+
+  /* PDFS */
 
 .pdf-hover-container {
     display: flex;
