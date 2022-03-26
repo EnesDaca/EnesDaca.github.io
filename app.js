@@ -1,3 +1,13 @@
+  document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#thumbnail-slider', {
+		  fixedWidth : 500,
+	  fixedHeight: 600,
+		  gap        : 10,
+		  rewind     : true,
+		  pagination : false,
+	  cover      : true,
+	} ).mount();
+  } );
 var thumb1 =  document.getElementById("thumb1");
 var thumb1Src =  document.getElementById("thumb1").src;
 var thumb2 =  document.getElementById("thumb2");
@@ -97,6 +107,8 @@ var thumbtmh2 =  document.getElementById("thumbtmh2");
 var thumbtmh2Src =  document.getElementById("thumbtmh2").src;
 var thumbtmh3 =  document.getElementById("thumbtmh3");
 var thumbtmh3Src =  document.getElementById("thumbtmh3").src;
+var thumbtmh4 =  document.getElementById("thumbtmh3");
+var thumbtmh4Src =  document.getElementById("thumbtmh3").src;
 
 thumbtmh1.addEventListener("click",function(){
 	document.getElementById("mainImg5").src = thumbtmh1Src
@@ -106,6 +118,9 @@ thumbtmh2.addEventListener("click",function(){
 })
 thumbtmh3.addEventListener("click",function(){
 	document.getElementById("mainImg5").src = thumbtmh3Src
+})
+thumbtmh4.addEventListener("click",function(){
+	document.getElementById("mainImg5").src = thumbtmh4Src
 })
 
 var thumbfaf1 =  document.getElementById("thumbfaf1");
@@ -133,7 +148,8 @@ var thumbhove3 =  document.getElementById("thumbhove3");
 var thumbhove3Src =  document.getElementById("thumbhove3").src;
 var thumbhove4 =  document.getElementById("thumbhove4");
 var thumbhove4Src =  document.getElementById("thumbhove4").src;
-
+var thumbhove5 =  document.getElementById("thumbhove4");
+var thumbhove5Src =  document.getElementById("thumbhove4").src;
 thumbhove1.addEventListener("click",function(){
 	document.getElementById("mainImg7").src = thumbhove1Src
 })
@@ -145,4 +161,7 @@ thumbhove3.addEventListener("click",function(){
 })
 thumbhove4.addEventListener("click",function(){
 	document.getElementById("mainImg7").src = thumbhove4Src
+})
+thumbhove5.addEventListener("click",function(){
+	document.getElementById("mainImg7").src = thumbhove5Src
 })
