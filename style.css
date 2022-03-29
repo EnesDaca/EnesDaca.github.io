@@ -22,8 +22,7 @@ body {
 
 body {
     width: 100%;
-    background: url(FreshPaint-42-2021.01.11-11.25.03.jpg) no-repeat top center / cover;
-    background-size: fit-content;
+    background: url(FreshPaint-42-2021.01.11-11.25.03.jpg) repeat top center / cover;
 }
 
 a {
