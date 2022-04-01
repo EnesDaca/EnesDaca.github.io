@@ -81,7 +81,7 @@ nav li:hover::after{
 }
 
 nav {
-    padding: 50px 100px;
+    padding: 80px 100px;
     height: 67vh;
 }
 
@@ -185,7 +185,7 @@ nav ul li.active ul li a:hover{
     .text-header {
         display: flex;
         align-items: center; 
-        padding: 40px 25px;
+        padding: 60px 25px;
         letter-spacing: 20px;
         margin-top: 30px;
     }
