@@ -276,13 +276,14 @@ ul {
 
 
 .sf-img img {
-    width: 100%;
+    width: auto;
     height: 273px;
 }
 .sf-img:nth-child(4) img{
     height: 273px;
 }
 .sf-smaller {
+    margin-top: 30px;
     height: 250px;
 }
 
