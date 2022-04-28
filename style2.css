@@ -838,7 +838,7 @@ ul {
     display: block;
     height: calc(100% - 7px);
     width: calc(100% - 7px);
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -1371,6 +1371,24 @@ footer a:hover {
     .txt01-03 {
         margin-bottom: 50px;
     }
+
+    /* GSW  */
+    .grid-container-gsw img{
+        padding: 0px 90px;
+    }
+    .grid-container-gsw:nth-child(2) img,
+    .grid-container-gsw:nth-child(2) p {
+        padding: 0 30px;
+        width: 100%;
+        height: auto;
+    }
+    .grid-container-gsw:nth-child(9) img,
+    .grid-container-gsw:nth-child(9) p {
+       padding: 0 100px;
+    }
+    .grid-container-gsw p {
+        padding: 0px 90px;
+    }
     /* gswsf */
     
     .grid-all{
@@ -1388,6 +1406,11 @@ footer a:hover {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .grid-container img {
         width: 100%;
         height: auto;
     }
@@ -1412,6 +1435,10 @@ footer a:hover {
         width: 100%;
         height: auto;
     }
+   
+    .sf-img-mid {
+       padding-bottom: 20em;
+    }
     /* .sf-img {
      align-items: center;
      width: fit-content;
@@ -1429,10 +1456,32 @@ footer a:hover {
         align-items: center;
         height: auto;
     } */
+
+    /* DRAWINGS */
+    .grid-container-drawings img,
+    .grid-container-drawings p {
+        width: 100%;
+        height: auto;
+        padding: 5px 220px;
+    }
     /* wbrc */
     .text-container-wbrc {
         padding: 100px 10px;
     
+    }
+
+    /* WBRC */
+    .sf-img-small img{
+        width: 250px;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .double-container-wbrc {
+        display: grid;
+        place-items: center;
+        gap: 100px;
+        padding: 30px;
     }
     /* tyde */
     .content{
@@ -1440,12 +1489,64 @@ footer a:hover {
         grid-template-rows: auto;
         justify-items: center;
         align-items: center;
+        width: 100%;
+        height: auto;
         /* height: fit-content;
         width: auto;
         position: relative; */
     }
     .tyde-container{
-        height: fit-content;
+        width: 100%;
+        height: auto;
+    }
+    /* ALL the Things */
+    .grid-container img{
+        width: auto;
+        height: 250px;
+        padding: 15px;
+    }
+    /* THREE CHAIRS */
+    .grid-container-tc{
+        width: 100%;
+        height: auto;
+        padding-bottom: 80px;
+    }
+    .grid-container-tc p{
+        padding-left: 60px;
+    }
+    .grid-container-tc img {
+        width: 100%;
+        height: auto;
+        padding: 0 60px;
+    }
+    .grid-container-tc:nth-child(7) img,
+    .grid-container-tc:nth-child(7) p {
+        padding: 0;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .container-audio {
+        padding-left: 60px;
+        padding-right: 35px;
+    }
+    .container-audio:nth-child(2) {
+        padding-right: 80px;
+    }
+
+    .picture-sticky{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 8em;
+        padding-bottom: 8em;
+    }
+    .picture-sticky img,
+    .picture-sticky p {
+        padding-left: 100px;
+    
     }
     /* green books */
 
