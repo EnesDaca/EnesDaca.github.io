@@ -306,9 +306,8 @@ ul {
 }
 .sf-img-mid {
     height: 100px;
-    width: 284px;
-    align-self: center;
-    margin-top: 10px;
+    width: 300px;
+    margin-top: 83px;
 }
 
 .sf-img-small {
@@ -839,7 +838,7 @@ ul {
     display: block;
     height: calc(100% - 7px);
     width: calc(100% - 7px);
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     border-radius: 50%;
     display: grid;
     place-items: center;
