@@ -1311,6 +1311,10 @@ footer a:hover {
         letter-spacing: 20px;
         margin: 0;
     }
+    * {
+        -webkit-overflow-scrolling: touch;
+        overflow: scroll;
+    }
 
     p {
         font-size: 12px;
@@ -1377,9 +1381,15 @@ footer a:hover {
     }
 
     /* GSW  */
-    .grid-container-gsw {
+    /* .grid-container-gsw {
+        display: flex;
+        flex-direction: column;
         padding: 0;
         margin-bottom: 100px;
+    } */
+    
+    .grid-all {
+        user-select: none;
     }
     .grid-container-gsw img{
         padding: 0px 90px;
