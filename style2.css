@@ -1311,6 +1311,10 @@ footer a:hover {
         letter-spacing: 20px;
         margin: 0;
     }
+
+    p {
+        font-size: 12px;
+    }
     .text-header-black {
         padding: 30px 25px;
         letter-spacing: 20px;
@@ -1373,6 +1377,10 @@ footer a:hover {
     }
 
     /* GSW  */
+    .grid-container-gsw {
+        padding: 0;
+        margin-bottom: 100px;
+    }
     .grid-container-gsw img{
         padding: 0px 90px;
     }
@@ -1474,7 +1482,6 @@ footer a:hover {
     .sf-img-small img{
         width: 250px;
         height: auto;
-        font-size: 12px;
     }
 
     .double-container-wbrc {
