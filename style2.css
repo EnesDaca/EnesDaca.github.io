@@ -134,7 +134,7 @@ ul {
 
 .tyde-container {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: auto 1fr auto;
     justify-items: center;
     align-items: center;
     /* display: flex;
@@ -1316,9 +1316,6 @@ footer a:hover {
         overflow: scroll;
     }
 
-    p {
-        font-size: 12px;
-    }
     .text-header-black {
         padding: 30px 25px;
         letter-spacing: 20px;
@@ -1361,9 +1358,13 @@ footer a:hover {
         padding: 0;
         padding-top: 15px;
     }
+
     .gsw p {
         margin: 0px;
         padding: 5px 20px;
+    }
+    .next-footer {
+        margin-top: auto;
     }
     .next-footer h4,
     .next-footer a {
@@ -1388,8 +1389,8 @@ footer a:hover {
         margin-bottom: 100px;
     } */
     
-    .grid-all {
-        user-select: none;
+    .grid-all p{
+        font-size: 12px;
     }
     .grid-container-gsw img{
         padding: 0px 90px;
@@ -1409,6 +1410,7 @@ footer a:hover {
     }
     /* gswsf */
     
+    
     .grid-all{
         display: flex;
         align-content: space-between;
@@ -1420,13 +1422,14 @@ footer a:hover {
     }
     .grid-container{
         display: flex;
-        align-content: space-between;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 30px;
+        /* width: 100%;
+        height: auto; */
+        /* padding: 30px; */
+        padding-bottom: 50px;
+        margin-bottom: 0px;
     }
     .grid-container img {
         width: 100%;
@@ -1454,8 +1457,41 @@ footer a:hover {
         height: auto;
     }
    
-    .sf-img-mid {
+    /* .sf-img-mid {
        padding-bottom: 20em;
+    } */
+    .sf-img-mid {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .sf-img-mid img {
+        width: 100%;
+        height: auto;
+        padding: 0 50px;
+    }
+    .sf-img-mid p {
+        padding: 0 50px;
+    }
+    /* .double-container {
+        margin: 0px;
+        padding: 0px;
+    } */
+    /* .double-container{
+        margin-bottom: 10px;
+    } */
+    .double-container-lastrow{
+        gap: 150px;
+        padding: 0;
+        margin-bottom: 100px;
+    }
+    .sf-smaller {
+        height: auto;
+    }
+    .sf-img-fourth {
+        width: auto;
+        height: auto;
     }
     /* .sf-img {
      align-items: center;
@@ -1480,12 +1516,16 @@ footer a:hover {
     .grid-container-drawings p {
         width: 100%;
         height: auto;
-        padding: 5px 220px;
+        padding: 0px 220px;
     }
     /* wbrc */
     .text-container-wbrc {
         padding: 100px 10px;
-    
+       
+    }
+    .sf-img-small{
+        width: auto;
+        height: auto;
     }
 
     /* WBRC */
@@ -1506,8 +1546,9 @@ footer a:hover {
         grid-template-rows: auto;
         justify-items: center;
         align-items: center;
-        width: 100%;
+        width: auto;
         height: auto;
+        overflow: hidden;
         /* height: fit-content;
         width: auto;
         position: relative; */
@@ -1515,18 +1556,126 @@ footer a:hover {
     .tyde-container{
         width: 100%;
         height: auto;
+        padding: 0 30px;
+        overflow-y: hidden;
     }
+
+    .sliders {
+        display: flex;
+        justify-content: space-between;
+        /* position: absolute;
+        top: 50%;
+        right: 250px; */
+        width: auto;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
     /* ALL the Things */
+
     .grid-container img{
         width: auto;
         height: 250px;
         padding: 15px;
     }
+    /* LOVE LETTER */
+    .img01-ll img {
+        padding: 0 20px;
+        width: 100%;
+        height: auto;
+    }
+    /* NEWVO */
+    .grid-container-newvo{
+        padding: 0 30px;
+        overflow: hidden;
+        margin-bottom: 100px;
+
+    }
+    .grid-container-newvo img {
+        width: 100%;
+        height: auto;
+    }
+    .grid-container-newvo:nth-child(2) img,
+    .grid-container-newvo:nth-child(2) p {
+        padding: 0 90px;
+    }
+    .grid-container-newvo:nth-child(3) img,
+    .grid-container-newvo:nth-child(3) p {
+        padding: 0 160px;
+    }
+    .grid-container-newvo:nth-child(4) img,
+    .grid-container-newvo:nth-child(4) p {
+        padding: 0 180px;
+    }
+    /* NEWVO - WP */
+    .grid-container-newvowp{
+        padding: 0;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+    .grid-container-newvowp img,
+    .grid-container-newvowp p {
+        width: 100%;
+        height: auto;
+        padding: 0 30px;
+    }
+    .grid-container-newvowp:nth-child(6) img,
+    .grid-container-newvowp:nth-child(6) p {
+        padding: 0;
+        padding-right: 160px;
+        overflow: hidden;
+    }
+    /* EXIBITIONS */
+    .grid-container-exibitions-new{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: auto;
+        width: 80%;
+        margin-bottom: 100px;
+        overflow: hidden;
+    }
+    .grid-container-exibitions-new img{
+        width: 100%;
+        height: auto;
+    }
+    .grid-container-exibitions-new:nth-child(6) img,
+    .grid-container-exibitions-new:nth-child(7) img,
+    .grid-container-exibitions-new:nth-child(8) img,
+    .grid-container-exibitions-new:nth-child(9) img,
+    .grid-container-exibitions-new:nth-child(11) img,
+    .grid-container-exibitions-new:nth-child(12) img {
+        width: 85%;
+    }
+   
+    /* WORK WASTE */
+    .grid-container-ww{
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        padding: 0;
+        overflow: hidden;
+    }
+    .grid-container-ww p {
+        padding: 0 20px;
+    }
+    .grid-container-ww img {
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+    }
+    .grid-container-ww:nth-child(1) img {
+        width: 100%;
+    }
     /* THREE CHAIRS */
     .grid-container-tc{
         width: 100%;
         height: auto;
-        padding-bottom: 80px;
+       margin-bottom: 0px;
+        overflow: hidden;
     }
     .grid-container-tc p{
         padding-left: 60px;
