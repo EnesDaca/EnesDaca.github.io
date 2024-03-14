@@ -1,1 +1,1 @@
-(https://lamija.org/)
+https://lamija.org/
